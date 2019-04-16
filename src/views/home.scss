@@ -47,7 +47,14 @@ html {
                 }
 
                 .active-tab {
-                    padding: 20px 50px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    height: 60px;
+                    width: 190px;
+                    // padding: 0 50px;
+                    // padding: 20px 50px;
                     border-radius: 8px;
                     background-color: #A14E69;
                     box-shadow: 0 0 10px rgba(0, 0, 0, .16);

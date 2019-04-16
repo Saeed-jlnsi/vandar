@@ -3,6 +3,7 @@
     <app-header></app-header>
     <div class="container">
       <h2>کسب و کار جدید</h2>
+      <!-- <img src="../assets/img/ثبت کسب و کار جدید.svg" alt=""> -->
       <div class="form-header">
         <span>نوع کسب و کار</span>
         <span class="active-tab">اطلاعات کسب‌و‌کار</span>
