@@ -3,10 +3,10 @@
     <app-header></app-header>
     <div class="container">
       <h2>کسب و کار جدید</h2>
-      <div class="form-title">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="form-header">
+        <span>نوع کسب و کار</span>
+        <span class="active-tab">اطلاعات کسب‌و‌کار</span>
+        <span>بارگزاری</span>
       </div>
     </div>
   </div>

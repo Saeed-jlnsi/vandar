@@ -17,6 +17,7 @@ html {
         direction: rtl;
         font-family: 'IRANSans';
         font-size: 12px;
+        background-color: #F5F5F5;
 
         h2 {
             font-size: 20px;
@@ -26,11 +27,31 @@ html {
             max-width: 580px;
             margin: 0 auto;
             margin-top: 80px;
-            background-color: antiquewhite;
 
             h2 {
                 line-height: 31px;
-                margin-bottom: 20px;
+                margin-bottom: 30px;
+            }
+
+            .form-header {
+                height: 40px;
+                background-color: #BBBBBB;
+                color: #fff;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                border-radius: 4px;
+
+                & > span {
+                    line-height: 24px;
+                }
+
+                .active-tab {
+                    padding: 20px 50px;
+                    border-radius: 8px;
+                    background-color: #A14E69;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, .16);
+                }
             }
         }
     }
