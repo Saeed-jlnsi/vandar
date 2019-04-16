@@ -1,12 +1,12 @@
 <template>
   <div>
-    <app-button></app-button>
-    <app-custom-input></app-custom-input>
+    <app-header></app-header>
   </div>
 </template>
 
 <script>
 
+import Header from '@/components/Header/Header';
 import Button from '@/components/Button/Button';
 import CustomInput from '@/components/CustomInput/CustomInput';
 
@@ -19,7 +19,8 @@ export default {
   },
   components: {
     appButton : Button,
-    appCustomInput : CustomInput
+    appCustomInput : CustomInput,
+    appHeader : Header
   }
 
 }
