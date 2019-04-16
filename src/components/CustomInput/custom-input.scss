@@ -1,0 +1,22 @@
+
+.input-wrapper {
+    // display: flex;
+    // align-items: center;
+    .form-label {
+        color: #333333;
+        line-height: 24px;
+    }
+
+    .form-input {
+        height: 40px;
+        border: 1px solid #E5E5E5;
+        border-radius: 4px;
+        padding-right: 15px;
+
+        
+    }
+
+    ::placeholder {
+        color: #E1E1E1;
+    }
+}

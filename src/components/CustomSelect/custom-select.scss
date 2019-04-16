@@ -1,0 +1,41 @@
+
+.select-wrapper {
+    // display: flex;
+    // align-items: center;
+    .form-label {
+        color: #333333;
+        line-height: 24px;
+    }
+    .form-select {
+        height: 40px;
+        border: 1px solid #E5E5E5;
+        border-radius: 4px;
+        padding-right: 15px;
+        background-color: #fff;
+        color: #E1E1E1;
+    }
+
+    
+}
+
+// CHANGE THE COLOR OF THE SELECT'S ARROW
+
+// .select-wrapper:after {
+//     border: 6px solid transparent;
+//     border-color: #333333 transparent transparent transparent;
+//     content: "";
+//     position: relative;
+//     top: 10px;
+//     left: 16px;
+
+//     // width: 0; 
+//     // height: 0; 
+//     // border-left: 6px solid transparent;
+//     // border-right: 6px solid transparent;
+//     // border-top: 6px solid #f00;
+//     // position: absolute;
+//     // top: 40%;
+//     // right: 5px;
+//     // content: "";
+//     // z-index: 98;
+// }

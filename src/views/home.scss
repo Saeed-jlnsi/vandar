@@ -41,6 +41,7 @@ html {
                 justify-content: space-around;
                 align-items: center;
                 border-radius: 4px;
+                margin-bottom: 20px;
 
                 & > span {
                     line-height: 24px;
@@ -58,6 +59,18 @@ html {
                     border-radius: 8px;
                     background-color: #A14E69;
                     box-shadow: 0 0 10px rgba(0, 0, 0, .16);
+                }
+            }
+
+            .registration-form {
+                background-color: #fff;
+                padding: 40px;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, .05);
+                border-radius: 4px;
+
+                .input-component {
+                    margin-bottom: 10px;
+                    height: 40px;
                 }
             }
         }

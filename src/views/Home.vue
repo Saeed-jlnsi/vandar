@@ -9,6 +9,21 @@
         <span class="active-tab">اطلاعات کسب‌و‌کار</span>
         <span>بارگزاری</span>
       </div>
+      <div class="registration-form">
+        <!-- SHOULD BE LOOPED INSIDE A V-FOR DIRECTIVE -->
+        <app-custom-input class="input-component"></app-custom-input>
+        <app-custom-input class="input-component"></app-custom-input>
+        <app-custom-input class="input-component"></app-custom-input>
+        <app-custom-input class="input-component"></app-custom-input>
+        <app-custom-input class="input-component"></app-custom-input>
+        <app-custom-input class="input-component"></app-custom-input>
+        <app-custom-select class="select-component"></app-custom-select>
+        <app-custom-select class="select-component"></app-custom-select>
+        <app-custom-input class="input-component"></app-custom-input>
+        <app-custom-input class="input-component"></app-custom-input>
+        <app-custom-input class="input-component"></app-custom-input>
+        <hr>
+      </div>
     </div>
   </div>
 </template>
@@ -18,6 +33,7 @@
 import Header from '@/components/Header/Header';
 import Button from '@/components/Button/Button';
 import CustomInput from '@/components/CustomInput/CustomInput';
+import CustomSelect from '@/components/CustomSelect/CustomSelect';
 
 export default {
   name: 'Home',
@@ -29,7 +45,8 @@ export default {
   components: {
     appButton : Button,
     appCustomInput : CustomInput,
-    appHeader : Header
+    appHeader : Header,
+    appCustomSelect : CustomSelect
   }
 
 }
