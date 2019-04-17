@@ -1,0 +1,49 @@
+.text-area-wrapper {
+    margin-bottom: 10px;
+    display: grid;
+    // FOR NOW!, LATER ASSIGN RELATIVE WIDTH
+    grid-template-columns: 94px 380px 26px;
+    grid-row-gap: 10px;
+    .form-label {
+        color: #333333;
+        line-height: 40px;
+    }
+
+    .form-text-area {
+        max-height: 40px;
+        border: 1px solid #E5E5E5;
+        border-radius: 4px;
+        padding-right: 15px;
+        resize: none;
+    }
+
+    ::placeholder {
+        color: #E1E1E1;
+    }
+
+    img.form-icon {
+        margin: auto 10px auto 0;
+        cursor: pointer;
+    }
+
+    .star-icon {
+        color: #D44D42;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .text-area-wrapper {
+        grid-template-columns: 255px !important;
+        grid-template-rows: 40px 70px;
+
+        .form-label {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .form-text-area {
+            height: 70px;
+            min-height: 70px;
+        }
+    }
+}

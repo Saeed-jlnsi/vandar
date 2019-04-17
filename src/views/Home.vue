@@ -20,7 +20,7 @@
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-select class="select-component"></app-custom-select>
           <app-custom-select class="select-component"></app-custom-select>
-          <app-custom-input class="input-component"></app-custom-input>
+          <app-custom-text-area class="text-area-component"></app-custom-text-area>
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-input class="input-component"></app-custom-input>
         </form>
@@ -41,6 +41,7 @@ import Header from '@/components/Header/Header';
 import Button from '@/components/Button/Button';
 import CustomInput from '@/components/CustomInput/CustomInput';
 import CustomSelect from '@/components/CustomSelect/CustomSelect';
+import CustomTextArea from '@/components/CustomTextArea/CustomTextArea';
 
 export default {
   name: 'Home',
@@ -53,7 +54,8 @@ export default {
     appButton : Button,
     appCustomInput : CustomInput,
     appHeader : Header,
-    appCustomSelect : CustomSelect
+    appCustomSelect : CustomSelect,
+    appCustomTextArea : CustomTextArea
   }
 
 }
