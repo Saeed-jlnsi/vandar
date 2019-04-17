@@ -1,11 +1,11 @@
 
 @font-face {
 	font-family: "IRANSans";
-	src: url("../assets/font/IRANSans.ttf") format("ttf"),
-	url("../assets/font/IRANSans_Bold.ttf") format("ttf"),
-	url("../assets/font/IRANSans_Medium.ttf") format("ttf"),
-	url("../assets/font/IRANSans_Light.ttf") format("ttf"),
-	url("../assets/font/IRANSans_UltraLight.ttf") format("ttf");
+	src: url("../assets/font/IRANSans.ttf");
+	// src: url("../assets/font/IRANSans_Bold.ttf") format('truetype'),
+	// url("../assets/font/IRANSans_Medium.ttf") format('truetype'),
+	// url("../assets/font/IRANSans_Light.ttf") format('truetype'),
+	// url("../assets/font/IRANSans_UltraLight.ttf") format('truetype');
 }
 
 html {
@@ -28,9 +28,10 @@ html {
             margin: 0 auto;
             margin-top: 80px;
 
-            h2 {
+            & > h2 {
                 line-height: 31px;
                 margin-bottom: 30px;
+                font-weight: 700;
             }
 
             .form-header {
@@ -59,6 +60,8 @@ html {
                     border-radius: 8px;
                     background-color: #A14E69;
                     box-shadow: 0 0 10px rgba(0, 0, 0, .16);
+                    font-weight: 700;
+
                 }
             }
 
