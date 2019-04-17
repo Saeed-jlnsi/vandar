@@ -2,11 +2,12 @@
 .input-wrapper {
     margin-bottom: 10px;
     display: grid;
-    grid-template-columns: 2fr 380px 1fr;
+    // FOR NOW!, LATER ASSIGN RELATIVE WIDTH
+    grid-template-columns: 94px 380px 26px;
     grid-row-gap: 10px;
     .form-label {
         color: #333333;
-        line-height: 24px;
+        line-height: 40px;
     }
 
     .form-input {

@@ -18,8 +18,8 @@
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-input class="input-component"></app-custom-input>
-          <!-- <app-custom-select class="select-component"></app-custom-select>
-          <app-custom-select class="select-component"></app-custom-select> -->
+          <app-custom-select class="select-component"></app-custom-select>
+          <app-custom-select class="select-component"></app-custom-select>
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-input class="input-component"></app-custom-input>

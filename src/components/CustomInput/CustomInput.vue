@@ -14,11 +14,9 @@
         </div>
     </div> -->
     <div class="input-wrapper">
-        <label for="name" class="form-label" >این تست است</label>
+        <label for="name" class="form-label" >نام انگلیسی برند</label>
         <input id="name" class="form-input" type="text" placeholder="این تست هست">
         <img src="/src/assets/icon/information-outline.svg" alt=""> 
-        <!-- <span>test</span>
-        <span>test</span> -->
     </div>
 </template>
 
