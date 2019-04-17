@@ -12,7 +12,7 @@
     }
 
     .form-input {
-        height: 40px;
+        max-height: 40px;
         border: 1px solid #E5E5E5;
         border-radius: 4px;
         padding-right: 15px;
@@ -24,6 +24,7 @@
 
     img.form-icon {
         margin: auto 10px auto 0;
+        cursor: pointer;
     }
 
     // FIX IT LATER

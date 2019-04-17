@@ -35,25 +35,36 @@ html {
             }
 
             .form-header {
-                height: 40px;
-                background-color: #BBBBBB;
+                
+                // background-color: #BBBBBB;
                 color: #fff;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                border-radius: 4px;
                 margin-bottom: 20px;
 
                 & > span {
+                    width: 34%;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     line-height: 24px;
+                    background-color: #BBBBBB;
+                    text-align: center;
+                    margin: auto;
+                }
+
+                & > span:last-child {
+                    border-radius: 4px 0 0 4px;
+                }
+                & > span:first-child {
+                    border-radius: 0 4px 4px 0;
                 }
 
                 .active-tab {
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-                    justify-content: center;
                     height: 60px;
+                    min-width: 190px;
                     width: 190px;
                     // padding: 0 50px;
                     // padding: 20px 50px;
