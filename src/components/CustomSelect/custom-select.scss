@@ -15,12 +15,35 @@
         padding-right: 15px;
         background-color: #fff;
         color: #E1E1E1;
+        // TO HIDE THE ARROW ICON OF THE SELECT BOX
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
     }
 
     .star-icon {
         color: #D44D42;
+        margin-right: 5px;
     }
     
+}
+
+
+
+// CHANGE THE COLOR OF THE SELECT'S ARROW
+
+.select-wrapper:after {
+    width: 0; 
+    height: 0; 
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #666666;
+    position: relative;
+    top: 40%;
+    left: 25px;
+    content: "";
+    z-index: 98;
 }
 
 @media only screen and (max-width: 480px) {
@@ -33,26 +56,3 @@
         }
     }
 }
-
-
-// CHANGE THE COLOR OF THE SELECT'S ARROW
-
-// .select-wrapper:after {
-//     border: 6px solid transparent;
-//     border-color: #333333 transparent transparent transparent;
-//     content: "";
-//     position: relative;
-//     top: 10px;
-//     left: 16px;
-
-//     // width: 0; 
-//     // height: 0; 
-//     // border-left: 6px solid transparent;
-//     // border-right: 6px solid transparent;
-//     // border-top: 6px solid #f00;
-//     // position: absolute;
-//     // top: 40%;
-//     // right: 5px;
-//     // content: "";
-//     // z-index: 98;
-// }
