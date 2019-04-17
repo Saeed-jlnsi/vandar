@@ -45,3 +45,14 @@ div.input-wrapper:nth-of-type(6),
 div.input-wrapper:nth-of-type(9) {
     grid-template-columns: 94px 380px 26px;
 }
+
+@media only screen and (max-width: 480px) {
+    .input-wrapper {
+        grid-template-columns: 255px !important;
+        grid-template-rows: 40px 40px;
+        .form-label {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    }
+}

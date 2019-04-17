@@ -23,6 +23,17 @@
     
 }
 
+@media only screen and (max-width: 480px) {
+    .select-wrapper {
+        grid-template-columns: 255px !important;
+        grid-template-rows: 40px 40px;
+        .form-label {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    }
+}
+
 
 // CHANGE THE COLOR OF THE SELECT'S ARROW
 

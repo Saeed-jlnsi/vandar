@@ -18,6 +18,7 @@ html {
         font-family: 'IRANSans';
         font-size: 12px;
         background-color: #F5F5F5;
+        color: #333333;
 
         h2 {
             font-size: 20px;
@@ -117,6 +118,26 @@ html {
             }
             
             
+        }
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .container {
+        margin: 30px 20px 0 20px !important;
+        .active-tab {
+            min-width: 106px !important;
+            width: 106px !important;
+            font-weight: 400 !important;
+        }
+        .registration-form {
+            padding: 20px !important;
+            .btn-box {
+                .confBtn {
+                    width: 120px !important;
+                }
+            }
         }
     }
 }
