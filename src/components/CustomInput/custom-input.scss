@@ -1,9 +1,10 @@
 
+// SHOULD MOVE SHARED STYLES WITH CUSTOM SELECT INPUT TO THE HOME.SCSS
 .input-wrapper {
     margin-bottom: 10px;
     display: grid;
     // FOR NOW!, LATER ASSIGN RELATIVE WIDTH
-    grid-template-columns: 94px 380px 26px;
+    grid-template-columns: 94px 220px 26px;
     grid-row-gap: 10px;
     .form-label {
         color: #333333;
@@ -27,4 +28,14 @@
         height: 16px;
         background: #333333;
     }
+
+    .star-icon {
+        color: #D44D42;
+    }
+}
+
+div.input-wrapper:nth-of-type(1),
+div.input-wrapper:nth-of-type(6),
+div.input-wrapper:nth-of-type(9) {
+    grid-template-columns: 94px 380px 26px;
 }

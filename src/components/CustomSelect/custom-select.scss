@@ -2,7 +2,7 @@
 .select-wrapper {
     margin-bottom: 10px;
     display: grid;
-    grid-template-columns: 94px 380px 26px;
+    grid-template-columns: 94px 220px 26px;
     grid-row-gap: 10px;
     .form-label {
         color: #333333;
@@ -17,8 +17,12 @@
         color: #E1E1E1;
     }
 
+    .star-icon {
+        color: #D44D42;
+    }
     
 }
+
 
 // CHANGE THE COLOR OF THE SELECT'S ARROW
 

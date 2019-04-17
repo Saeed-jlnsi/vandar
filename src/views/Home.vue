@@ -11,7 +11,7 @@
       </div>
       <div class="registration-form">
         <!-- SHOULD BE LOOPED INSIDE A V-FOR DIRECTIVE -->
-        <!-- <form action=""> -->
+        <form method="post" action="#">
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-input class="input-component"></app-custom-input>
@@ -23,12 +23,12 @@
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-input class="input-component"></app-custom-input>
-        <!-- </form> -->
+        </form>
           <!-- STYLE THE HR TAG LATER -->
           <hr>
           <div class="btn-box">
             <app-button @click.native="submit" color="regular" class="confBtn">مرحله بعد</app-button>
-            <span><a href="#">انصراف</a><a href="#">مرحله قبل</a></span>
+            <span><a href="#">انصراف</a><span class="seperator">|</span><a href="#">مرحله قبل</a></span>
           </div>
       </div>
     </div>
