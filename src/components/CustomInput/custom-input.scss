@@ -22,12 +22,17 @@
         color: #E1E1E1;
     }
 
-    .form-icon {
-        margin: auto;
-        width: 16px;
-        height: 16px;
-        background: #333333;
+    img.form-icon {
+        margin: auto 10px auto 0;
     }
+
+    // FIX IT LATER
+
+    // img.form-icon:nth-of-type(1), 
+    // img.form-icon:nth-of-type(2),
+    // img.form-icon:nth-of-type(3) {
+    //     display: none;
+    // }
 
     .star-icon {
         color: #D44D42;
