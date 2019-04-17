@@ -16,7 +16,7 @@
     <div class="input-wrapper">
         <label for="name" class="form-label" >نام انگلیسی برند</label>
         <input id="name" class="form-input" type="text" placeholder="این تست هست">
-        <img src="/src/assets/icon/information-outline.svg" alt=""> 
+        <img class="form-icon" src="/src/assets/icon/information-outline.svg" alt=""> 
     </div>
 </template>
 

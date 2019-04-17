@@ -1,7 +1,9 @@
 <template>
-  <div>
-   test
-  </div>
+  <div class="button-wrapper">
+    <div class="btn">
+            <slot>Button</slot>
+        </div>
+    </div>
 </template>
 
 <script>

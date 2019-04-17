@@ -75,7 +75,35 @@ html {
                 //     grid-gap: 10px;
                 //     grid-template-columns: 2fr 1fr;
                 // }
+
+                & > hr {
+                    margin: 30px 0;
+                }
+
+                .btn-box {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .confBtn {
+                        width: 147px;
+                        height: 40px;
+                        line-height: 40px;
+                    }
+
+                    & > span a {
+                        color: #666666;
+                        text-decoration: none;
+                    }
+                    
+                    & > span a:first-child {
+                        margin-left: 15px;
+                        padding-left: 15px;
+                        border-left: 1px solid #666666;
+                    }
+                }
             }
+            
+            
         }
     }
 }
