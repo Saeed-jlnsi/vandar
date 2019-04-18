@@ -74,6 +74,7 @@ export default {
         this.isValidCode();
       }
       console.log(this.inputValue);
+      console.log(this.nationalCode);
     },
 
     // INSERT ZERO(s) AT THE BEGINNING OF THE NATIONAL CODE 
@@ -85,14 +86,18 @@ export default {
 
     // CHANGE THE INPUT VALUE TO STRING AND PUSH EACH INDIVIDUAL DIGIT INTO THE ARRAY
     pushToArray() {
-      for(let i=0; i< 10; i++) {
+      // this.nationalCode = [];
+      for(var i=0; i< 10; i++) {
         this.nationalCode.push(parseInt(this.inputValue.charAt(i)));
       }
     },
 
     // EVALUTE THE ENTERED NATIONAL CODE 
     isValidCode() {
+      this.remainder = 0;
+      this.sumResult = 0;
       this.controllerNumber = this.nationalCode[9];
+      
       for(let j= 8; j >= 0; j--) {
         this.sumResult += (this.nationalCode[j] * (10-j));
       }
@@ -104,6 +109,8 @@ export default {
       }else {
         alert("کد ملی وارد شده صحیح نیست!");
       }
+      this.nationalCode = [];
+      this.inputValue = "";
     }
   }
 }
