@@ -31,7 +31,7 @@
           <!-- STYLE THE HR TAG LATER -->
           <hr>
           <div class="btn-box">
-            <app-button @click.native="submit" color="regular" class="confBtn">مرحله بعد</app-button>
+            <app-button @click.native="nationalCodeChecker" color="regular" class="confBtn">مرحله بعد</app-button>
             <span><a href="#">انصراف</a><span class="seperator">|</span><a href="#">مرحله قبل</a></span>
           </div>
       </div>
@@ -55,7 +55,7 @@ export default {
       controllerNumber : 0,
       sumResult : 0,
       remainder : 0,
-      inputValue : 0
+      inputValue : ''
     }
   },
   components: {
@@ -66,17 +66,42 @@ export default {
     appCustomTextArea : CustomTextArea
   },
   methods: {
-    submit() {
+      // THE MAIN FUNCTION 
+      nationalCodeChecker() {
+      if(this.inputValue.length == 10) {
+        this.pushToArray();
+        this.isValidCode();
+      }else if(this.inputValue.length < 10 && this.inputValue.length >= 8) {
+        this.insertZero();
+        this.pushToArray();
+        this.isValidCode();
+      }else if (this.inputValue.length < 8 ) {
+        alert("حداقل تعداد ارقام کد ملی باید ۸ رقم باشد. لطفا دوباره کد ملی خود را وارد نمایید.");
+      }
+      
+    },
+
+    // INSERT ZERO(s) AT THE BEGINNING OF THE NATIONAL CODE 
+    insertZero() {
+      while(this.inputValue.length < 10) {
+        this.inputValue = "0" + this.inputValue;
+      }
+    },
+
+    // CHANGE THE INPUT VALUE TO STRING AND PUSH EACH INDIVIDUAL DIGIT INTO THE ARRAY
+    pushToArray() {
       for(let i=0; i< 10; i++) {
         this.nationalCode.push(parseInt(this.inputValue.charAt(i)));
       }
-      this.controllerNumber = this.nationalCode[9];
+    },
 
+    // EVALUTE THE ENTERED NATIONAL CODE 
+    isValidCode() {
+      this.controllerNumber = this.nationalCode[9];
       for(let j= 8; j >= 0; j--) {
         this.sumResult += (this.nationalCode[j] * (10-j));
       }
       this.remainder = this.sumResult % 11;
-
       if((this.remainder < 2) && (this.remainder == this.controllerNumber)) {
         alert("کد ملی وارد شده معتبر می باشد");
       }else if((this.remainder > 2) && ((11 - this.remainder) == this.controllerNumber)) {
