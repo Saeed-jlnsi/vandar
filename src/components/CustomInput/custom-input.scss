@@ -1,30 +1,30 @@
 
 // SHOULD MOVE SHARED STYLES WITH CUSTOM SELECT INPUT TO THE HOME.SCSS
 .input-wrapper {
-    margin-bottom: 10px;
-    display: grid;
+    margin-bottom: 10px; //repeated
+    display: grid; //repeated
     // FOR NOW!, LATER ASSIGN RELATIVE WIDTH
-    grid-template-columns: 94px 220px 26px;
-    grid-row-gap: 10px;
+    grid-template-columns: 94px 220px 26px;  //repeated with custom-select
+    grid-row-gap: 10px;  //repeated
     .form-label {
-        color: #333333;
-        line-height: 40px;
+        color: #333333; //repeated
+        line-height: 40px; //repeated
     }
 
     .form-input {
-        max-height: 40px;
-        border: 1px solid #E5E5E5;
-        border-radius: 4px;
-        padding-right: 15px;
+        max-height: 40px; //repeated
+        border: 1px solid #E5E5E5; //repeated
+        border-radius: 4px; //repeated
+        padding-right: 15px; //repeated
     }
 
     ::placeholder {
-        color: #E1E1E1;
+        color: #E1E1E1; //repeated
     }
 
     img.form-icon {
-        margin: auto 10px auto 0;
-        cursor: pointer;
+        margin: auto 10px auto 0; //repeated
+        cursor: pointer; //repeated with custom-select
     }
 
     // FIX IT LATER
@@ -36,8 +36,8 @@
     // }
 
     .star-icon {
-        color: #D44D42;
-        margin-right: 5px;
+        color: #D44D42; //repeated
+        margin-right: 5px; //repeated
     }
 }
 
@@ -49,11 +49,11 @@ div.input-wrapper:nth-of-type(9) {
 
 @media only screen and (max-width: 480px) {
     .input-wrapper {
-        grid-template-columns: 255px !important;
-        grid-template-rows: 40px 40px;
+        grid-template-columns: 255px !important;  //repeated
+        grid-template-rows: 40px 40px; //repeated with custom-select
         .form-label {
-            grid-column-start: 1;
-            grid-column-end: 4;
+            grid-column-start: 1; //repeated
+            grid-column-end: 4; //repeated
         }
     }
 }

@@ -1,18 +1,18 @@
 
 .select-wrapper {
-    margin-bottom: 10px;
-    display: grid;
-    grid-template-columns: 94px 220px 26px;
-    grid-row-gap: 10px;
+    margin-bottom: 10px; //repeated
+    display: grid; //repeated
+    grid-template-columns: 94px 220px 26px;  //repeated with custom-input
+    grid-row-gap: 10px; //repeated
     .form-label {
-        color: #333333;
-        line-height: 40px;
+        color: #333333; //repeated
+        line-height: 40px; //repeated
     }
     .form-select {
-        height: 40px;
-        border: 1px solid #E5E5E5;
-        border-radius: 4px;
-        padding-right: 15px;
+        height: 40px; //repeated max-height: 40px;
+        border: 1px solid #E5E5E5; //repeated
+        border-radius: 4px; //repeated
+        padding-right: 15px; //repeated
         background-color: #fff;
         color: #E1E1E1;
         // TO HIDE THE ARROW ICON OF THE SELECT BOX
@@ -23,8 +23,8 @@
     }
 
     .star-icon {
-        color: #D44D42;
-        margin-right: 5px;
+        color: #D44D42; //repeated
+        margin-right: 5px; //repeated
     }
     
 }
@@ -48,11 +48,11 @@
 
 @media only screen and (max-width: 480px) {
     .select-wrapper {
-        grid-template-columns: 255px !important;
-        grid-template-rows: 40px 40px;
+        grid-template-columns: 255px !important; //repeated
+        grid-template-rows: 40px 40px; //repeated custom-input
         .form-label {
-            grid-column-start: 1;
-            grid-column-end: 4;
+            grid-column-start: 1; //repeated
+            grid-column-end: 4; //repeated
         }
     }
 }
