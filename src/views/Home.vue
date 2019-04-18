@@ -3,7 +3,6 @@
     <app-header></app-header>
     <div class="container">
       <h2>کسب و کار جدید</h2>
-      <!-- <img src="../assets/img/ثبت کسب و کار جدید.svg" alt=""> -->
       <div class="form-header">
         <span>نوع کسب و کار</span>
         <span class="active-tab">اطلاعات کسب‌و‌کار</span>
@@ -15,11 +14,7 @@
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-input class="input-component"></app-custom-input>
-
-          <!-- INPUT RELATED TO THE NATIONALCODE -->
           <app-custom-input v-model="inputValue" class="input-component"></app-custom-input>
-          <!-- <p>{{inputValue}}</p> -->
-
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-select class="select-component"></app-custom-select>
@@ -68,17 +63,17 @@ export default {
   methods: {
       // THE MAIN FUNCTION 
       nationalCodeChecker() {
-      if(this.inputValue.length == 10) {
-        this.pushToArray();
-        this.isValidCode();
-      }else if(this.inputValue.length < 10 && this.inputValue.length >= 8) {
-        this.insertZero();
-        this.pushToArray();
-        this.isValidCode();
-      }else if (this.inputValue.length < 8 ) {
+
+      if (this.inputValue.length < 8 ) {
         alert("حداقل تعداد ارقام کد ملی باید ۸ رقم باشد. لطفا دوباره کد ملی خود را وارد نمایید.");
+      }else {
+        if(this.inputValue.length < 10) {
+          this.insertZero();
+        }
+        this.pushToArray();
+        this.isValidCode();
       }
-      
+      console.log(this.inputValue);
     },
 
     // INSERT ZERO(s) AT THE BEGINNING OF THE NATIONAL CODE 
