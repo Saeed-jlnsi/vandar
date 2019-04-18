@@ -15,7 +15,11 @@
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-input class="input-component"></app-custom-input>
-          <app-custom-input class="input-component"></app-custom-input>
+
+          <!-- INPUT RELATED TO THE NATIONALCODE -->
+          <app-custom-input v-model="inputValue" class="input-component"></app-custom-input>
+          <!-- <p>{{inputValue}}</p> -->
+
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-input class="input-component"></app-custom-input>
           <app-custom-select class="select-component"></app-custom-select>
@@ -47,7 +51,11 @@ export default {
   name: 'Home',
   data () {
     return {
-
+      nationalCode : [],
+      controllerNumber : 0,
+      sumResult : 0,
+      remainder : 0,
+      inputValue : 0
     }
   },
   components: {
@@ -56,8 +64,28 @@ export default {
     appHeader : Header,
     appCustomSelect : CustomSelect,
     appCustomTextArea : CustomTextArea
-  }
+  },
+  methods: {
+    submit() {
+      for(let i=0; i< 10; i++) {
+        this.nationalCode.push(parseInt(this.inputValue.charAt(i)));
+      }
+      this.controllerNumber = this.nationalCode[9];
 
+      for(let j= 8; j >= 0; j--) {
+        this.sumResult += (this.nationalCode[j] * (10-j));
+      }
+      this.remainder = this.sumResult % 11;
+
+      if((this.remainder < 2) && (this.remainder == this.controllerNumber)) {
+        alert("کد ملی وارد شده معتبر می باشد");
+      }else if((this.remainder > 2) && ((11 - this.remainder) == this.controllerNumber)) {
+        alert("کد ملی وارد شده معتبر می باشد");
+      }else {
+        alert("کد ملی وارد شده صحیح نیست!");
+      }
+    }
+  }
 }
 </script>
 
