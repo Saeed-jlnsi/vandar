@@ -14,7 +14,7 @@
         </div>
     </div> -->
     <div class="input-wrapper">
-        <label for="name" class="form-label" >نام انگلیسی برند<span class="star-icon">*</span></label>
+        <label v-if="label" for="name" class="form-label" >{{label}}<span class="star-icon">*</span></label>
         <input id="name" class="form-input" type="text" placeholder="این تست هست" v-model="value" maxlength="10" @input="submitted">
         <img class="form-icon" src="@/assets/icon/information-outline.svg" alt=""> 
     </div>
@@ -24,6 +24,9 @@
 
 export default {
     name: 'CustomInput',
+    props: {
+        label:{}
+    },
     data () {
         return {  
             value : ''

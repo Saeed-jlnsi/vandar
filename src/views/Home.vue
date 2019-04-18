@@ -11,17 +11,17 @@
       <div class="registration-form">
         <!-- SHOULD BE LOOPED INSIDE A V-FOR DIRECTIVE -->
         <form method="post" action="#">
-          <app-custom-input class="input-component"></app-custom-input>
-          <app-custom-input class="input-component"></app-custom-input>
-          <app-custom-input class="input-component"></app-custom-input>
-          <app-custom-input v-model="inputValue" class="input-component"></app-custom-input>
-          <app-custom-input class="input-component"></app-custom-input>
-          <app-custom-input class="input-component"></app-custom-input>
-          <app-custom-select class="select-component"></app-custom-select>
-          <app-custom-select class="select-component"></app-custom-select>
-          <app-custom-text-area class="text-area-component"></app-custom-text-area>
-          <app-custom-input class="input-component"></app-custom-input>
-          <app-custom-input class="input-component"></app-custom-input>
+          <app-custom-input label="نام حقوقی" class="input-component"></app-custom-input>
+          <app-custom-input label="نام برند" class="input-component"></app-custom-input>
+          <app-custom-input label="نام انگلیسی برند" class="input-component"></app-custom-input>
+          <app-custom-input label="شناسه ملی" v-model="inputValue" class="input-component"></app-custom-input>
+          <app-custom-input label="شماره شبا" class="input-component"></app-custom-input>
+          <app-custom-input label="حوزه فعالیت" class="input-component"></app-custom-input>
+          <app-custom-select label="استان" class="select-component"></app-custom-select>
+          <app-custom-select label="شهر" class="select-component"></app-custom-select>
+          <app-custom-text-area label="آدرس" class="text-area-component"></app-custom-text-area>
+          <app-custom-input label="کد پستی" class="input-component"></app-custom-input>
+          <app-custom-input label="تلفن ثابت" class="input-component"></app-custom-input>
         </form>
           <!-- STYLE THE HR TAG LATER -->
           <hr>
@@ -46,6 +46,7 @@ export default {
   name: 'Home',
   data () {
     return {
+      label: '',
       nationalCode : [],
       controllerNumber : 0,
       sumResult : 0,
@@ -97,7 +98,7 @@ export default {
       this.remainder = 0;
       this.sumResult = 0;
       this.controllerNumber = this.nationalCode[9];
-      
+
       for(let j= 8; j >= 0; j--) {
         this.sumResult += (this.nationalCode[j] * (10-j));
       }

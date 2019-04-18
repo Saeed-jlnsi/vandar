@@ -14,7 +14,7 @@
         </div>
     </div> -->
     <div class="text-area-wrapper">
-        <label for="text-area" class="form-label" >نام انگلیسی برند<span class="star-icon">*</span></label>
+        <label v-if="label" for="text-area" class="form-label" >{{label}}<span class="star-icon">*</span></label>
         <textarea name="text-area" id="text-area" class="form-text-area"></textarea>
     </div>
 </template>
@@ -23,6 +23,9 @@
 
 export default {
     name: 'CustomTextArea',
+    props: {
+        label:{},
+    },
     data () {
         return {  
 
