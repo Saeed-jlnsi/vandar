@@ -11,17 +11,59 @@
       <div class="registration-form">
         <!-- SHOULD BE LOOPED INSIDE A V-FOR DIRECTIVE -->
         <form method="post" action="#">
-          <app-custom-input label="نام حقوقی" class="input-component"></app-custom-input>
-          <app-custom-input label="نام برند" class="input-component"></app-custom-input>
-          <app-custom-input label="نام انگلیسی برند" class="input-component"></app-custom-input>
-          <app-custom-input label="شناسه ملی" v-model="inputValue" class="input-component"></app-custom-input>
-          <app-custom-input label="شماره شبا" class="input-component"></app-custom-input>
-          <app-custom-input label="حوزه فعالیت" class="input-component"></app-custom-input>
-          <app-custom-select label="استان" class="select-component"></app-custom-select>
-          <app-custom-select label="شهر" class="select-component"></app-custom-select>
-          <app-custom-text-area label="آدرس" class="text-area-component"></app-custom-text-area>
-          <app-custom-input label="کد پستی" class="input-component"></app-custom-input>
-          <app-custom-input label="تلفن ثابت" class="input-component"></app-custom-input>
+          <app-custom-input 
+            :hasIcon="true" 
+            label="نام حقوقی" 
+            class="input-component" 
+            placeHolder="نامی که در روزنامه رسمی شما آمده است">
+          </app-custom-input>
+          <app-custom-input 
+            :hasIcon="true" 
+            label="نام برند" 
+            class="input-component" 
+            placeHolder="نام کوتاه و اختصاری">
+          </app-custom-input>
+          <app-custom-input 
+            :hasIcon="true" 
+            label="نام انگلیسی برند" 
+            class="input-component" 
+            placeHolder="مثل Vandar">
+          </app-custom-input>
+          <app-custom-input 
+            label="شناسه ملی" 
+            v-model="inputValue" 
+            class="input-component">
+          </app-custom-input>
+          <app-custom-input 
+            label="شماره شبا" 
+            class="input-component" 
+            placeHolder="IR430550011480005587452001">
+          </app-custom-input>
+          <app-custom-input 
+            label="حوزه فعالیت" 
+            class="input-component">
+          </app-custom-input>
+          <app-custom-select 
+            label="استان" 
+            class="select-component">
+          </app-custom-select>
+          <app-custom-select 
+            label="شهر" 
+            class="select-component">
+          </app-custom-select>
+          <app-custom-text-area 
+            label="آدرس" 
+            class="text-area-component">
+          </app-custom-text-area>
+          <app-custom-input 
+            label="کد پستی" 
+            class="input-component">
+          </app-custom-input>
+          <app-custom-input 
+            label="تلفن ثابت" 
+            class="input-component" 
+            placeHolder="مثل 22886644">
+          </app-custom-input>
         </form>
           <!-- STYLE THE HR TAG LATER -->
           <hr>
@@ -111,7 +153,6 @@ export default {
         alert("کد ملی وارد شده صحیح نیست!");
       }
       this.nationalCode = [];
-      this.inputValue = "";
     }
   }
 }
