@@ -1,11 +1,6 @@
 
 // SHOULD MOVE SHARED STYLES WITH CUSTOM SELECT INPUT TO THE HOME.SCSS
 .input-wrapper {
-    margin-bottom: 10px; //repeated
-    display: grid; //repeated
-    // FOR NOW!, LATER ASSIGN RELATIVE WIDTH
-    grid-template-columns: 94px 220px 26px;  //repeated with custom-select
-    grid-row-gap: 10px;  //repeated
     .form-label {
         color: #333333; //repeated
         line-height: 40px; //repeated
@@ -41,19 +36,18 @@
     }
 }
 
-div.input-wrapper:nth-of-type(1),
-div.input-wrapper:nth-of-type(6),
-div.input-wrapper:nth-of-type(9) {
-    grid-template-columns: 94px 380px 26px;
-}
-
 @media only screen and (max-width: 480px) {
     .input-wrapper {
-        grid-template-columns: 255px !important;  //repeated
+        grid-template-columns: 90% !important;  //repeated
         grid-template-rows: 40px 40px; //repeated with custom-select
         .form-label {
             grid-column-start: 1; //repeated
             grid-column-end: 4; //repeated
         }
+        .form-input {
+            font-size: 12px;
+        }
     }
 }
+
+

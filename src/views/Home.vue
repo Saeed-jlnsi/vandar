@@ -14,54 +14,54 @@
           <app-custom-input 
             :hasIcon="true" 
             label="نام حقوقی" 
-            class="input-component" 
+            class="component-element" 
             placeHolder="نامی که در روزنامه رسمی شما آمده است">
           </app-custom-input>
           <app-custom-input 
             :hasIcon="true" 
             label="نام برند" 
-            class="input-component" 
+            class="component-element" 
             placeHolder="نام کوتاه و اختصاری">
           </app-custom-input>
           <app-custom-input 
             :hasIcon="true" 
             label="نام انگلیسی برند" 
-            class="input-component" 
+            class="component-element" 
             placeHolder="مثل Vandar">
           </app-custom-input>
           <app-custom-input 
             label="شناسه ملی" 
             v-model="inputValue" 
-            class="input-component">
+            class="component-element">
           </app-custom-input>
           <app-custom-input 
             label="شماره شبا" 
-            class="input-component" 
+            class="component-element" 
             placeHolder="IR430550011480005587452001">
           </app-custom-input>
           <app-custom-input 
             label="حوزه فعالیت" 
-            class="input-component">
+            class="component-element">
           </app-custom-input>
           <app-custom-select 
             label="استان" 
-            class="select-component">
+            class="component-element">
           </app-custom-select>
           <app-custom-select 
             label="شهر" 
-            class="select-component">
+            class="component-element">
           </app-custom-select>
           <app-custom-text-area 
             label="آدرس" 
-            class="text-area-component">
+            class="component-element">
           </app-custom-text-area>
           <app-custom-input 
             label="کد پستی" 
-            class="input-component">
+            class="component-element">
           </app-custom-input>
           <app-custom-input 
             label="تلفن ثابت" 
-            class="input-component" 
+            class="component-element" 
             placeHolder="مثل 22886644">
           </app-custom-input>
         </form>

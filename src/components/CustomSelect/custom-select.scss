@@ -1,9 +1,6 @@
 
 .select-wrapper {
-    margin-bottom: 10px; //repeated
-    display: grid; //repeated
-    grid-template-columns: 94px 220px 26px;  //repeated with custom-input
-    grid-row-gap: 10px; //repeated
+    
     .form-label {
         color: #333333; //repeated
         line-height: 40px; //repeated
@@ -45,7 +42,7 @@
 
 @media only screen and (max-width: 480px) {
     .select-wrapper {
-        grid-template-columns: 255px !important; //repeated
+        grid-template-columns: 90% !important; //repeated
         grid-template-rows: 40px 40px; //repeated custom-input
         .form-label {
             grid-column-start: 1; //repeated

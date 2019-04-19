@@ -1,9 +1,6 @@
 .text-area-wrapper {
-    margin-bottom: 10px; //repeated
-    display: grid; //repeated
     // FOR NOW!, LATER ASSIGN RELATIVE WIDTH
     grid-template-columns: 94px 380px 26px;
-    grid-row-gap: 10px; //repeated
     .form-label {
         color: #333333; //repeated
         line-height: 40px; //repeated
@@ -34,7 +31,7 @@
 
 @media only screen and (max-width: 480px) {
     .text-area-wrapper {
-        grid-template-columns: 255px !important; //repeated
+        grid-template-columns: 90% !important; //repeated
         grid-template-rows: 40px 70px;
 
         .form-label {

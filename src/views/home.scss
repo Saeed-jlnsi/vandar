@@ -1,11 +1,11 @@
 
 @font-face {
 	font-family: "IRANSans";
-	src: url("../assets/font/IRANSans.ttf");
-	// src: url("../assets/font/IRANSans_Bold.ttf") format('truetype'),
-	// url("../assets/font/IRANSans_Medium.ttf") format('truetype'),
-	// url("../assets/font/IRANSans_Light.ttf") format('truetype'),
-	// url("../assets/font/IRANSans_UltraLight.ttf") format('truetype');
+	src: url("../assets/font/IRANSans.ttf"),
+	url("../assets/font/IRANSans_Bold.ttf") format('truetype'),
+	url("../assets/font/IRANSans_Medium.ttf") format('truetype'),
+	url("../assets/font/IRANSans_Light.ttf") format('truetype'),
+	url("../assets/font/IRANSans_UltraLight.ttf") format('truetype');
 }
 
 html {
@@ -37,7 +37,6 @@ html {
 
             .form-header {
                 
-                // background-color: #BBBBBB;
                 color: #fff;
                 display: flex;
                 justify-content: space-around;
@@ -45,7 +44,7 @@ html {
                 margin-bottom: 20px;
 
                 & > span {
-                    width: 34%;
+                    width: 40%;
                     height: 40px;
                     display: flex;
                     align-items: center;
@@ -67,8 +66,6 @@ html {
                     height: 60px;
                     min-width: 190px;
                     width: 190px;
-                    // padding: 0 50px;
-                    // padding: 20px 50px;
                     border-radius: 8px;
                     background-color: #A14E69;
                     box-shadow: 0 0 10px rgba(0, 0, 0, .16);
@@ -82,14 +79,19 @@ html {
                 padding: 40px;
                 box-shadow: 0 10px 15px rgba(0, 0, 0, .05);
                 border-radius: 4px;
-                // display: grid;
-                
 
-                // form {
-                //     display: grid;
-                //     grid-gap: 10px;
-                //     grid-template-columns: 2fr 1fr;
-                // }
+                .component-element {
+                    margin-bottom: 10px;
+                    display: grid; 
+                    grid-template-columns: 94px 220px 26px; 
+                    grid-row-gap: 10px; 
+                }
+
+                div.component-element:nth-of-type(1),
+                div.component-element:nth-of-type(6),
+                div.component-element:nth-of-type(9) {
+                    grid-template-columns: 94px 380px 26px;
+                }
 
                 & > hr {
                     margin: 30px 0;
@@ -138,6 +140,20 @@ html {
                     width: 120px !important;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .container {
+        margin: 30px 10px 0 10px !important;
+
+        & > h2 {
+            text-align: center;
+        }
+
+        .registration-form {
+            padding: 10px !important;
         }
     }
 }
