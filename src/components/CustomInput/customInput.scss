@@ -1,48 +1,39 @@
 
-// SHOULD MOVE SHARED STYLES WITH CUSTOM SELECT INPUT TO THE HOME.SCSS
 .input-wrapper {
     .form-label {
-        color: #333333; //repeated
-        line-height: 40px; //repeated
+        color: #333333; 
+        line-height: 40px; 
     }
 
     .form-input {
-        max-height: 40px; //repeated
-        border: 1px solid #E5E5E5; //repeated
-        border-radius: 4px; //repeated
-        padding-right: 15px; //repeated
+        max-height: 40px; 
+        border: 1px solid #E5E5E5; 
+        border-radius: 4px; 
+        padding-right: 15px; 
     }
 
     ::placeholder {
-        color: #E1E1E1; //repeated
+        color: #E1E1E1; 
     }
 
     img.form-icon {
-        margin: auto 10px auto 0; //repeated
-        cursor: pointer; //repeated with custom-select
+        margin: auto 10px auto 0; 
+        cursor: pointer;  
     }
 
-    // FIX IT LATER
-
-    // img.form-icon:nth-of-type(1), 
-    // img.form-icon:nth-of-type(2),
-    // img.form-icon:nth-of-type(3) {
-    //     display: none;
-    // }
-
     .star-icon {
-        color: #D44D42; //repeated
-        margin-right: 5px; //repeated
+        color: #D44D42; 
+        margin-right: 5px; 
     }
 }
 
 @media only screen and (max-width: 480px) {
     .input-wrapper {
-        grid-template-columns: 90% !important;  //repeated
-        grid-template-rows: 40px 40px; //repeated with custom-select
+        grid-template-columns: 90% !important;  
+        grid-template-rows: 40px 40px;  
         .form-label {
-            grid-column-start: 1; //repeated
-            grid-column-end: 4; //repeated
+            grid-column-start: 1; 
+            grid-column-end: 4; 
         }
         .form-input {
             font-size: 12px;

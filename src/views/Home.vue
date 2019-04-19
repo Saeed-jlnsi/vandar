@@ -9,7 +9,6 @@
         <span>بارگزاری</span>
       </div>
       <div class="registration-form">
-        <!-- SHOULD BE LOOPED INSIDE A V-FOR DIRECTIVE -->
         <form method="post" action="#">
           <app-custom-input 
             :hasIcon="true" 
@@ -65,7 +64,6 @@
             placeHolder="مثل 22886644">
           </app-custom-input>
         </form>
-          <!-- STYLE THE HR TAG LATER -->
           <hr>
           <div class="btn-box">
             <app-button @click.native="nationalCodeChecker" color="regular" class="confBtn">مرحله بعد</app-button>
