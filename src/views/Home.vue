@@ -30,7 +30,8 @@
           </app-custom-input>
           <app-custom-input 
             label="شناسه ملی" 
-            v-model="inputValue" 
+            v-model="inputValue"
+            type="number" 
             class="component-element">
           </app-custom-input>
           <app-custom-input 
@@ -104,6 +105,7 @@ export default {
   methods: {
       // THE MAIN FUNCTION 
       nationalCodeChecker() {
+        // console.log(typeof(this.inputValue));
 
       if (this.inputValue.length < 8 ) {
         alert("حداقل تعداد ارقام کد ملی باید ۸ رقم باشد. لطفا دوباره کد ملی خود را وارد نمایید.");
@@ -114,8 +116,8 @@ export default {
         this.pushToArray();
         this.isValidCode();
       }
-      console.log(this.inputValue);
-      console.log(this.nationalCode);
+      // console.log(this.inputValue);
+      // console.log(this.nationalCode);
     },
 
     // INSERT ZERO(s) AT THE BEGINNING OF THE NATIONAL CODE 
@@ -129,6 +131,7 @@ export default {
     pushToArray() {
       // this.nationalCode = [];
       for(var i=0; i< 10; i++) {
+        // I COULD USE " v-model.number" TO CONVERT THE INPUT VALUE WHICH IS A STRING TO A NUMBER(A BETTER WAY THAN THE ONE BELLOW), FIX IT!
         this.nationalCode.push(parseInt(this.inputValue.charAt(i)));
       }
     },
